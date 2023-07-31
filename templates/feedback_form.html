@@ -1,0 +1,56 @@
+<!-- Feedback Form Template -->
+<!-- Feedback Form Template -->
+<div class="feedstack-feedback-form">
+  <form id="feedbackForm" method="post">
+    <!-- Step 1: Rating selection -->
+    <div class="step" data-step="1">
+      <p>Let us in, on your thoughts</p>
+      <div class="form-group">
+        <div class="rating">
+          <input type="radio" name="rating" value="5" id="star1" required>
+          <label for="star1" class="star-btn"></label>
+          <input type="radio" name="rating" value="4" id="star2">
+          <label for="star2" class="star-btn"></label>
+          <input type="radio" name="rating" value="3" id="star3">
+          <label for="star3" class="star-btn"></label>
+          <input type="radio" name="rating" value="2" id="star4">
+          <label for="star4" class="star-btn"></label>
+          <input type="radio" name="rating" value="1" id="star5">
+          <label for="star5" class="star-btn"></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="button" class="nextBtn">→</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Feedback input -->
+    <div class="step" data-step="2">
+      <div class="form-group">
+        <p for="feedback">What do you enjoy best!</p>
+        <input id="feedback" name="feedback" placeholder="write your feedback" />
+      </div>
+      <div class="form-group">
+        <button type="button" class="prevBtn">←</button>
+        <button type="button" class="nextBtn">→</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Email input -->
+    <div class="step" data-step="3">
+      <div class="form-group">
+        <label for="email">Let have your mail</label>
+        <input type="email" id="email" name="email" placeholder="enter your mail" required>
+      </div>
+      <div class="form-group">
+        <button type="button" class="prevBtn">←</button>
+        <button type="submit" class="submitBtn">✓</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div>
+  <button type="button" class="feedstack-toggle-button">💬 Feedback</button>
+</div>

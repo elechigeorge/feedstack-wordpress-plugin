@@ -38,6 +38,11 @@ function feedstack_plugin_settings_init() {
         'type' => 'string',
         'default' => '',
     ) );
+
+    register_setting( 'general', 'feedstack_feedback_enabled', array(
+        'type' => 'string',
+        'default' => '',
+    ) );
 }
 
 

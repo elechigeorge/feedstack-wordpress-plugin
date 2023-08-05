@@ -40,7 +40,7 @@ function feedstack_admin_enqueue_scripts() {
         'feedback-submissions',
         plugin_dir_url( __FILE__ ) . '/assets/javascript/admin.script.js',
         array( 'jquery' ),
-        null,
+        '1.0',
         true
     );
 
@@ -70,7 +70,7 @@ function feedstack_feedback_form_html() {
 
 function feedstack_render_feedback_form() {
     // Check if the feedback form is enabled
-    if ( get_option( 'feedstack_feedback_enabled', '1' ) ) {
+    if ( get_option( 'feedstack_feedback_enabled', '0' ) ) {
         $feedback_form_html = feedstack_feedback_form_html();
         echo $feedback_form_html;
     }

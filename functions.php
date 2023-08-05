@@ -16,37 +16,25 @@ function feedback_form_settings_init() {
         'feedback_form_section'
     );
 
-    register_setting( 'general', 'feedstack_feedback_enabled' );
+    
 }
 
 add_action( 'admin_init', 'feedback_form_settings_init' );
 
 function feedback_form_section_callback() {
-    
+
 }
 
 function feedstack_feedback_enabled_callback() {
     $enabled = get_option( 'feedstack_feedback_enabled' );
     ?>
 
-
-
-    <div class="form-switch form-check">
-        <input type="checkbox" class="" role="switch" name="feedstack_feedback_enabled" value="1" <?php checked( '1', $enabled ); ?> />
-        <label><?php echo ( $enabled === '1' ) ? 'Enabled' : 'Disabled'; ?></label>
+    <div class = 'form-switch form-check'>
+    <input type = 'checkbox' class = '' role = 'switch' name = 'feedstack_feedback_enabled' value = '1' <?php checked( '1', $enabled );
+    ?> />
+    <label><?php echo ( $enabled === '1' ) ? 'Enabled' : 'Disabled';
+    ?></label>
     </div>
     <?php
 
 }
-
-function feedback_form_settings_save() {
-    if ( isset( $_POST[ 'feedstack_feedback_enabled' ] ) ) {
-        update_option( 'feedstack_feedback_enabled', '1' );
-        error_log( 'Feedback form enabled.' );
-    } else {
-        update_option( 'feedstack_feedback_enabled', '0' );
-        error_log( 'Feedback form disabled.' );
-    }
-}
-
-// add_action( 'admin_init', 'feedback_form_settings_save' );

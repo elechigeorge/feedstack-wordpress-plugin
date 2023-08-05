@@ -39,7 +39,7 @@
 
 .star-btn:before {
   content: '\2605'; /* Unicode character for a star */
-  color: #f8d64e;
+  color: #000;
 }
 
 .rating input[type="radio"] {
@@ -48,7 +48,7 @@
 
 .rating input[type="radio"]:checked ~ label.star-btn:before {
   content: "\2605";
-  color: #f8d64e; 
+  color: #000; 
 }
 
 .rating label.star-btn:not(:checked):before {
@@ -73,11 +73,11 @@
 /* Styles for the progress buttons */
 .progress-btn {
   display: inline-block;
-  width: 20px; /* Make the buttons smaller */
-  height: 20px;
+  /* width: 20px; 
+  height: 20px; */
   text-align: center;
-  line-height: 20px;
-  margin: 5px;
+  /* line-height: 20px; */
+  /* margin: 5px; */
   border: 1px solid #111;
   border-radius: 50%;
   cursor: pointer;
@@ -93,7 +93,7 @@
 .form-controls {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .form-controls button {
@@ -151,8 +151,9 @@
 }
 
 .form-group button {
-  padding: 10px 20px;
+  padding: 5px 15px;
   margin-right: 10px;
+  margin-top: 10px;
   background-color: #111;
   color: #fff;
   border: none;
@@ -172,4 +173,28 @@
 .show-feedback-form .feedstack-feedback-form {
   display: block;
 }
+
+.feedstack-dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .feedstack-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .feedstack-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .feedstack-table th,
+  .feedstack-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
 

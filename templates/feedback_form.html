@@ -4,7 +4,8 @@
   <form id="feedbackForm" method="post">
     <!-- Step 1: Rating selection -->
     <div class="step" data-step="1">
-      <p>Let us in, on your thoughts</p>
+      
+      <p>We appreciate your feedbacks, How would you rate your experience</p>
       <div class="form-group">
         <div class="rating">
           <input type="radio" name="rating" value="5" id="star1" required>
@@ -20,7 +21,7 @@
         </div>
       </div>
       <div class="form-group">
-        <button type="button" class="nextBtn">→</button>
+        <button type="button" class="nextBtn">next</button>
       </div>
     </div>
 
@@ -28,24 +29,27 @@
     <div class="step" data-step="2">
       <div class="form-group">
         <p for="feedback">What do you enjoy best!</p>
-        <input id="feedback" name="feedback" placeholder="write your feedback" />
+        <input id="feedback" class="form-control form-control-sm" name="feedback" placeholder="write your feedback" />
       </div>
       <div class="form-group">
-        <button type="button" class="prevBtn">←</button>
-        <button type="button" class="nextBtn">→</button>
+        <button type="button" class="prevBtn">back</button>
+        <button type="button" class="nextBtn">next</button>
       </div>
     </div>
 
     <!-- Step 3: Email input -->
     <div class="step" data-step="3">
       <div class="form-group">
-        <label for="email">Let have your mail</label>
-        <input type="email" id="email" name="email" placeholder="enter your mail" required>
+        <p for="feedback">We would like to follow up on your review</p>
+        <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="Enter your email" required>
       </div>
       <div class="form-group">
-        <button type="button" class="prevBtn">←</button>
-        <button type="submit" class="submitBtn">✓</button>
+        <button type="button" class="prevBtn">back</button>
+        <button type="submit" class="submitBtn btn-success">submit</button>
       </div>
+    </div>
+    <div>
+      <small>made with <span class="text-secondary">feedstack.ng</span></small>
     </div>
   </form>
 </div>
